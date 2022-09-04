@@ -21,6 +21,7 @@ const Reviews = () => {
     setEditing(false)
     const updatedRevs = reviews.map(review => review.id == form.id ? form : review)
     setReviews(updatedRevs)
+    setForm({resturant: "", review:"", id:null })
   }
   
   const handleEdit = id => {
