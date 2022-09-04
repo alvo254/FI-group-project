@@ -20,7 +20,7 @@ const Reviews = () => {
     e.preventDefault()
     setEditing(false)
     const updatedRevs = reviews.map(review => review.id == form.id ? form : review)
-
+    setReviews(updatedRevs)
   }
   
   const handleEdit = id => {
