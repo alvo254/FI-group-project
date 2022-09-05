@@ -8,9 +8,9 @@ const NavBar =() => {
             <div className="nav-items">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
                 <a href="/reviews">Add Resturant</a>
                 <a href="/restaurants">Reviews</a>
+                <a href="/contact">Contact Us</a>
             </div>
             <div className="nav-toggle">
                 <div className="bar"></div>

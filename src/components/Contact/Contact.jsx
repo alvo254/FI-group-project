@@ -5,17 +5,17 @@ function Contact() {
     return (
         <div>
             <h1>Fell Free To Contact Us</h1>
+            <div className="img">
+                <img src={process.env.PUBLIC_URL + '/images/CONTACT.jpg'} alt="Valentine" className='image1'></img>
+                 </div>
             <section className="contact">
                 <div className="contact-title">
                 <h2>Contact Us</h2>
-                <p>
-                    <ul>
-                        <li>Restaurant Review</li>
-                        <li>4295 State HighWay</li>
-                        <li>Phone:0157537838</li>
-                        <li>contact@fairway.com</li>
-                    </ul>
-                </p>     
+    
+                        <p>Restaurant Review</p>
+                        <p>4295 State HighWay</p>
+                        <p>Phone:0157537838</p>
+                        <p>contact@fairway.com</p>
                 </div>
                 <div className="contact-pages">
                     <div>
