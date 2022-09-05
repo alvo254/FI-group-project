@@ -5,3 +5,8 @@
    margin-bottom: 40px;
     
 }
+.buttons{
+    display: flex;
+    margin-left: 800px;
+
+}
