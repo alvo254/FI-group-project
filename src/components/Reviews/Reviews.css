@@ -1,0 +1,31 @@
+.master{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    border: 1px solid black;
+    width: 20rem;
+    padding: 1rem;
+}
+input,textarea, button{
+    display: block;
+    margin: 0.5rem auto 0 auto;
+    padding: 0.25rem 0.5rem;
+
+}
+input,textarea{
+    width: calc(100% - 1rem);
+}
+
+button{
+    border: 1 px solid black;
+}
+h1, h2,h3{
+    margin: 0 0 1rem 0;
+}
+.revitem{
+    border: 1px solid black;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}

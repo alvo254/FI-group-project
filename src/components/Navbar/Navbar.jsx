@@ -8,8 +8,8 @@ const NavBar =() => {
                 <a href="/home">Home</a>
                 <a href="/about">About</a>
                 <a href="/contact">Contact Us</a>
-                <a href="/review">Review</a>
-                <a href="/restaurant">Restaurant</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/restaurants">Restaurants</a>
             </div>
             <div className="nav-toggle">
                 <div className="bar"></div>
