@@ -10,7 +10,7 @@ const Navbar = () => {
                 <a href="/about">About</a>
                 <a href="/contact">Contact Us</a>
                 <a href="/reviews">Reviews</a>
-                <a href="/restaurant">Restaurant</a>
+                <a href="/restaurants">Restaurants</a>
             </div>
             <div className="nav-toggle">
                 <div className="bar"></div>

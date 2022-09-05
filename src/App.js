@@ -6,7 +6,7 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
 import Navbar from './components/Navbar/Navbar';
-import Resturants from './components/Resturants/Resturants';
+import Resturants from './components/Restuarants/Restuarants';
 
 import { useState } from 'react';
 
@@ -27,7 +27,7 @@ function App() {
       <Route path='About' element={<About />}/>
       <Route path='Contact' element={<Contact />}/>
       <Route path='Reviews' element={<Reviews />}/>
-      <Route path='Resturants' element={<Resturants />}/>
+      <Route path='Restaurants' element={<Resturants />}/>
       
       </Routes>
       </BrowserRouter>
