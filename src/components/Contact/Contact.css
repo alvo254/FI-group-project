@@ -1,0 +1,7 @@
+.contact {
+    height: 300vh;
+    display: flex;
+}
+.contact-title {
+    width: 50%;
+}
