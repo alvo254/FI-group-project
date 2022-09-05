@@ -8,12 +8,11 @@ import Reviews from './components/Reviews/Reviews';
 import Navbar from './components/Navbar/Navbar';
 import Resturants from './components/Restuarants/Restuarants';
 
-import { useState } from 'react';
 
 
-function App() {
-  const [form, setForm] = useState({resturant: "", review:"", id:null })
-  const [reviews, setReviews] = useState([])
+   function App() {
+//   const [form, setForm] = useState({resturant: "", review:"", id:null })
+//   const [reviews, setReviews] = useState([])
 
   return (
     <div className="App">
