@@ -46,13 +46,13 @@ const Reviews = () => {
   return (
     <div className='master'>
       <form action="" onSubmit={edit ? update : sendit } className="form">
-        <h2>leave a comment</h2>
-        <label> Resturant</label>
+        <h2>Add Resturant</h2>
+        <label> Name</label>
         <input type="text" 
         placeholder='Restuarnt name' 
         id="resturant" name='resturant' value={form.resturant} onChange={change}/>
 
-        <label> Review </label>
+        <label> Location </label>
         <textarea type="text" 
         placeholder='Please leave a review' 
         id="review" name='review' value={form.review} onChange={change}/>
