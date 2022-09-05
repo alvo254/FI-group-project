@@ -1,17 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< HEAD
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-
-function App() {
-  return (
-    <div className='App'>
-      <BrowserRouter>
-      
-      </BrowserRouter>
-    </div>
-  )
-=======
 import {  BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home'
 import Contact from './components/Contact/Contact';
@@ -20,12 +8,11 @@ import Reviews from './components/Reviews/Reviews';
 import Navbar from './components/Navbar/Navbar';
 import Resturants from './components/Restuarants/Restuarants';
 
-import { useState } from 'react';
 
 
-function App() {
-  const [form, setForm] = useState({resturant: "", review:"", id:null })
-  const [reviews, setReviews] = useState([])
+   function App() {
+//   const [form, setForm] = useState({resturant: "", review:"", id:null })
+//   const [reviews, setReviews] = useState([])
 
   return (
     <div className="App">
@@ -47,7 +34,6 @@ function App() {
 
     </div>
   );
->>>>>>> 1e5fa08ffb381395a90b9a510efd76b11c5d07cc
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import React from "react";
-import "/home/leilani/FI-group-project/src/components/Navbar/Navbar.css"
+
 const NavBar =() => {
     return(
         <div className="navbar">
