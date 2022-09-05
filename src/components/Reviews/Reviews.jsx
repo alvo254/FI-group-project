@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Reviews.css'
 import {FaTrash, FaEdit} from "react-icons/fa"
 // import {uuid} from "uuidv4"
@@ -37,7 +37,7 @@ const Reviews = () => {
 
   const deleting = id => {
     const uprev = reviews.filter(review => 
-      review.id != id
+      review.id !== id
       )
       setReviews(uprev)
     
