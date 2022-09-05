@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     background: rgb(3, 55, 99);
+    height: 15vh;
 }
 
 .navbar > .nav-logo {
@@ -16,7 +17,7 @@
 
 .navbar > .nav-items > a {
     color: aliceblue;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     margin: 15px;
     position: relative;
