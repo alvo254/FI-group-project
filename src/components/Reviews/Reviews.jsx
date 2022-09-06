@@ -20,7 +20,6 @@ function Reviews(){
     const allComments = comments.map((comment) =>{
         return (
            <div key={comment.id} className="displayComment">
-            
                  <p >Name:  {comment.name}</p>
                  <p >Location:  {comment.location}</p>
                  <button>Delete</button>
@@ -63,21 +62,21 @@ function Reviews(){
             })
         })
       }
-    
-    
-    
+      
     return(
 
      <div className="commentForm">
          <h1>Resturants</h1>
-         {allComments}
-         <hr></hr>
          <h1>Add Restuarant</h1>
          <form className="updateForm">
-         <textarea value={formData.name} placeholder="Name" name="name" onChange={handleCommentChange} rows="10" ></textarea><br/>
+         <textarea value={formData.name} placeholder="Name" name="name" onChange={handleCommentChange} rows="4" ></textarea><br/>
          <input value={formData.location} placeholder="Location" name="location"  onChange={handleCommentChange}></input><br/>
          <input type="submit"className="submit"  onClick={handleSubmit}/>
          </form>
+         <hr></hr>
+         <div className='res'>
+         {allComments}
+         </div>
      </div>
      )
 }
