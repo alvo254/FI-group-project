@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import React, { useEffect, useState } from 'react'
-=======
 import React, { useState, useEffect } from 'react'
->>>>>>> Valentine
 import './Reviews.css'
-import {FaTrash, FaEdit} from "react-icons/fa"
+// import {FaTrash, FaEdit} from "react-icons/fa"
 
 function Reviews(){
     const [comments, setComments] =useState([])
@@ -35,34 +31,6 @@ function Reviews(){
     })
 
 
-<<<<<<< HEAD
-  }
-
-  const update = e =>{
-    e.preventDefault()
-    setEditing(false)
-    const updatedRevs = reviews.map(review => review.id == form.id ? form : review)
-    setReviews(updatedRevs)
-    setForm({resturant: "", review:"", id:null })
-  }
-  
-  const handleEdit = id => {
-    const editPost = reviews.filter(review => review.id == id)
-    setForm(editPost[0])
-    setEditing(true)
-  }
-
-  const change = e =>{
-    const {name, value} = e.target
-    setForm({...form, [name]:value})
-  }
-
-  const deleting = id => {
-    const uprev = reviews.filter(review => 
-      review.id !== id
-      )
-      setReviews(uprev)
-=======
     //Handle Change and submit
     function handleCommentChange(e){
         setFormData({
@@ -75,7 +43,6 @@ function Reviews(){
           name:formData.name,
           location:formData.location
         };
->>>>>>> Valentine
     
         fetch("https://rack-hosting-1.herokuapp.com/restaurants",{
           method: "POST",
