@@ -1,16 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Reviews.css'
 import {FaTrash, FaEdit} from "react-icons/fa"
+import axios from 'axios'
 // import {uuid} from "uuidv4"
 
 const Reviews = () => {
 
   const [form, setForm] = useState({resturant: "", review:"", id:null })
   const [reviews, setReviews] = useState([])
+  const [data, setData] = useState([])
   const [edit, setEditing] = useState(false)
+  const [geting, setGeting] = useState([])
+
+
+
+  useEffect(() =>{
+    axios.post("https://rack-hosting-1.herokuapp.com/restaurants")
+    .then((data) =>{setData(data.data)})
+    
+  },[])
+  // console.log(data.location)
+
+  useEffect(() => {
+    axios("https://rack-hosting-1.herokuapp.com/restaurants")
+    .then((geting) => {console.log(geting.data)})
+  })
+  console.log(geting.location)
 
   const sendit = (e) => {
     e.preventDefault()
+    // const {name, location} = e.target
+    // setReviews({...form, [name]:location})
     setReviews([...reviews, form])
     setForm({resturant: "", review:"", id:null })
 
@@ -60,9 +80,9 @@ const Reviews = () => {
       </form>
       <div className='revlist'>
         {reviews.map((review) => 
-        <div className='revitem'>
-          <h2>{review.resturant}</h2>
-          <p>{review.review}</p>
+        <div key = {review.id} className='revitem'>
+          <h2>{data.name}</h2>
+          <p>{review.location}</p>
           <div className="buttons">
             <button onClick={() => deleting(review.id)}> <FaTrash/> </button>
             <button onClick={() => handleEdit(review.id)}><FaEdit/></button>
