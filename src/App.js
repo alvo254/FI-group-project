@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Reviews from './components/Reviews/Reviews';
 import Navbar from './components/Navbar/Navbar';
 import Resturants from './components/Restuarants/Restuarants';
+import AddReviews from './components/AddReviews/AddReviews';
 
 
 
@@ -26,6 +27,7 @@ import Resturants from './components/Restuarants/Restuarants';
       <Route path='About' element={<About />}/>
       <Route path='Contact' element={<Contact />}/>
       <Route path='Reviews' element={<Reviews />}/>
+      <Route path='add' element={<AddReviews />}/>
       <Route path='Restaurants' element={<Resturants />}/>
       
       </Routes>
