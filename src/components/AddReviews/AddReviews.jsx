@@ -64,7 +64,7 @@ function AddReviews(){
     return (
         <div className="commentForm">
          <h1>Add review</h1>
-         <form className="updateForm">
+         <form className="Form">
             <label>Select Restaurants</label>
             <select value={resoption} onchange={handleResChange} name={resoption}>
                 {details.map((detail)=>(<option key={detail.Id} >{detail.name}</option>))}</select>
