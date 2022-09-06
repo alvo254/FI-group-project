@@ -14,7 +14,7 @@ const Restuarants = () => {
         )
     },[])
     console.log(restaurants)
-
+gi 
     const allComments = restaurants.map((restaurant)=>{
       return( <Comment  key={restaurant.id}
         name={restaurant.name}
