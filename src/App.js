@@ -29,6 +29,7 @@ import Resturants from './components/Restuarants/Restuarants';
       <Route path='Restaurants' element={<Resturants />}/>
       
       </Routes>
+      
       </BrowserRouter>
 
 
